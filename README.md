@@ -1,6 +1,6 @@
 # 記事: API_OPAQUE のmessageのロギング のサンプルコード
 
-記事: [API_OPAQUE のmessageのロギング](https://zenn.dev/haru256/articles/d6742c40e1e185) のサンプルコードリポジトリです。
+記事: [API_OPAQUE のmessageのロギング](https://zenn.dev/haru256/articles/7c7317e9cdd96d) のサンプルコードリポジトリです。
 
 このリポジトリには、以下のすべてが含まれています：
 
