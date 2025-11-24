@@ -119,7 +119,7 @@ func main() {
 	<-ctx.Done()
 
 	// サーバーをグレースフルシャットダウン
-	shutdownCtx, cancel := context.WithTimeout(ctx, 30*time.Second)
+	shutdownCtx, cancel := context.WithTimeout(context.Background(), 30*time.Second)
 	defer cancel()
 	if err = srv.Shutdown(shutdownCtx); err != nil {
 		logger.ErrorContext(ctx, "Server shutdown failed", "error", err)
