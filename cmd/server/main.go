@@ -122,9 +122,9 @@ func main() {
 	shutdownCtx, cancel := context.WithTimeout(context.Background(), 30*time.Second)
 	defer cancel()
 	if err = srv.Shutdown(shutdownCtx); err != nil {
-		logger.ErrorContext(ctx, "Server shutdown failed", "error", err)
+		logger.ErrorContext(shutdownCtx, "Server shutdown failed", "error", err)
 		return
 	} else {
-		logger.InfoContext(ctx, "Server stopped gracefully")
+		logger.InfoContext(shutdownCtx, "Server stopped gracefully")
 	}
 }
